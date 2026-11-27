@@ -9,8 +9,7 @@ steps:
   
   # Deploy to Cloud Run
   - name: 'gcr.io/cloud-builders/gcloud' 
-    args: 
-    [ 
+    args: [ 
     'run', 'deploy', 'recipe-backend', 
     '--image', 'gcr.io/$PROJECT_ID/recipe-backend', 
     '--platform', 'managed', 
